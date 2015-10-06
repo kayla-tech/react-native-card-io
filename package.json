@@ -18,9 +18,6 @@
     "ios",
     "android"
   ],
-  "peerDependencies": {
-    "react-native": ">=0.11"
-  },
   "author": "Roger Chapman",
   "license": "MIT"
 }
