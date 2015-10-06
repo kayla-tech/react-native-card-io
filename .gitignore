@@ -1,0 +1,5 @@
+*xcuserdata
+.idea/
+
+
+ios/libs/card.io-iOS-SDK/CardIO/libCardIO.a

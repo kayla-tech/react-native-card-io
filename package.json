@@ -1,0 +1,26 @@
+{
+  "name": "react-native-card-io",
+  "version": "1.0.0",
+  "description": "React Native component for card.io",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:kayla-tech/react-native-card-io.git"
+  },
+  "main": "index.js",
+  "keywords": [
+    "react-component",
+    "react-native",
+    "card.io",
+    "credit",
+    "card",
+    "scanner",
+    "native",
+    "ios",
+    "android"
+  ],
+  "peerDependencies": {
+    "react-native": ">=0.11"
+  },
+  "author": "Roger Chapman",
+  "license": "MIT"
+}
