@@ -107,3 +107,4 @@ To display the images returned by `didScanCard` use the following:
 ## Secure
 
 card.io does not store or transmit credit card numbers.
+Recommend using the [Privacy Snapshot react-native component](https://github.com/kayla-tech/react-native-privacy-snapshot) if using with iOS to blur the screen when the app is backgrounded.

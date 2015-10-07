@@ -26,6 +26,7 @@ RCT_ENUM_CONVERTER(CardIODetectionMode, (@{
 
 RCT_EXPORT_MODULE();
 
+RCT_EXPORT_VIEW_PROPERTY(hidden, BOOL);
 RCT_EXPORT_VIEW_PROPERTY(languageOrLocale, NSString);
 RCT_EXPORT_VIEW_PROPERTY(guideColor, UIColor);
 RCT_EXPORT_VIEW_PROPERTY(useCardIOLogo, BOOL);
@@ -62,7 +63,7 @@ static id ObjectOrNull(id object) {
             @"cvv": ObjectOrNull(cardInfo.cvv),
             @"postalCode": ObjectOrNull(cardInfo.postalCode),
             @"scanned": @(cardInfo.scanned),
-            @"cardImage": [UIImagePNGRepresentation(cardInfo.cardImage) base64EncodedStringWithOptions:NSDataBase64Encoding64CharacterLineLength],
+            @"cardImage": [UIImagePNGRepresentation(cardInfo.cardImage) base64EncodedStringWithOptions:kNilOptions],
             @"cardType": cardType,
             @"logoForCardType": [UIImagePNGRepresentation(cardLogo) base64EncodedStringWithOptions:kNilOptions]
             }];
