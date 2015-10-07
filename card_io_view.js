@@ -23,6 +23,7 @@ let CardIOView = React.createClass({
       'automatic',
     ]),
     didScanCard: React.PropTypes.func,
+    hidden: React.PropTypes.bool,
   },
 
   statics: {
