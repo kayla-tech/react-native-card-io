@@ -26,7 +26,7 @@ RCT_EXPORT_MODULE();
              };
 }
 
-RCT_EXPORT_METHOD(preload:(nonnull NSNumber *)reactTag) {
+RCT_EXPORT_METHOD(preload) {
     [CardIOUtilities preload];
 }
 
