@@ -22,8 +22,6 @@ RCT_ENUM_CONVERTER(CardIODetectionMode, (@{
     CardIOView *cardIOView;
 }
 
-@synthesize bridge, methodQueue;
-
 RCT_EXPORT_MODULE();
 
 RCT_EXPORT_VIEW_PROPERTY(hidden, BOOL);
