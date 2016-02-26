@@ -20,8 +20,7 @@ TODO: Currently building a react-native app for iOS and Android, so this will be
 ## Usage
 
 ``` javascript
-let CardIO = require('react-native-card-io');
-let { CardIOUtilities, CardIOView } = CardIO;
+import {CardIOView, CardIOUtilities} from 'react-native-card-io'
 
 ...
 
