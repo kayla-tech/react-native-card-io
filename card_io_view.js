@@ -39,11 +39,11 @@ let CardIOView = React.createClass({
   },
 
   componentWillMount() {
-    _listener = NativeAppEventEmitter.addListener('didScanCard', this.props.didScanCard);
+    this._listener = NativeAppEventEmitter.addListener('didScanCard', this.props.didScanCard);
   },
 
   componentWillUnmount() {
-    if (_listener) _listener.remove();
+    if (this._listener) this._listener.remove();
   },
 
   render() {
