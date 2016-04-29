@@ -8,7 +8,7 @@ A fully featured implementation of [card.io](https://www.card.io/) for iOS and A
 
 1. Run `npm install react-native-card-io --save` in your project directory.
 1. Inside `node_modules`, unzip `react-native-card-io/ios/libs/card.io-iOS-SDK/CardIO/libCardIO.a.zip`.
-1. Open your project in XCode, right click on `Libraries` and click `Add Files to "Your Project Name"`.
+1. Open your project in XCode (make sure to open `.xcworkspace` NOT `.xcproject`), right click on `Libraries` and click `Add Files to "Your Project Name"`.
 1. Within `node_modules`, find `react-native-card-io/ios` and add `RCTCardIO.xcodeproj` to your project.
 1. Add `libRCTCardIO.a` to `Build Phases -> Link Binary With Libraries`.
 1. Add the `-lc++` flag to `Build Settings -> Other Linker Flags`.
@@ -39,12 +39,11 @@ render() {
       <View>
         <CardIOView
           languageOrLocale="en_AU"
-          guideColor="red"
+          guideColor="#FF0000"
           useCardIOLogo={true}
           hideCardIOLogo={false}
           allowFreelyRotatingCardGuide={true}
-          scanInstructions={''}
-          scanOverlayView={<View />}
+          scanInstructions={'Hold card here. It will scan automatically.'}
           scanExpiry={true}
           scannedImageDuration={2}
           detectionMode={CardIOView.cardImageAndNumber}
