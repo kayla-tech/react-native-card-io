@@ -7,7 +7,6 @@ A fully featured implementation of [card.io](https://www.card.io/) for iOS and A
 ## Installation iOS
 
 1. Run `npm install react-native-card-io --save` in your project directory.
-1. Inside `node_modules`, unzip `react-native-card-io/ios/libs/card.io-iOS-SDK/CardIO/libCardIO.a.zip`.
 1. Open your project in XCode (make sure to open `.xcworkspace` NOT `.xcproject`), right click on `Libraries` and click `Add Files to "Your Project Name"`.
 1. Within `node_modules`, find `react-native-card-io/ios` and add `RCTCardIO.xcodeproj` to your project.
 1. Add `libRCTCardIO.a` to `Build Phases -> Link Binary With Libraries`.
