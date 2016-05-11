@@ -1,5 +1,5 @@
-let React = require('react-native');
-let { NativeModules } = React;
-let { CardIOUtilities } = NativeModules;
+import { NativeModules } from 'react-native';
 
-module.exports = CardIOUtilities;
+const { CardIOUtilities } = NativeModules;
+
+export default CardIOUtilities;

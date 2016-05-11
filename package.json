@@ -1,12 +1,15 @@
 {
   "name": "react-native-card-io",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "React Native component for card.io",
   "repository": {
     "type": "git",
     "url": "git@github.com:kayla-tech/react-native-card-io.git"
   },
   "main": "index.js",
+  "scripts": {
+    "postinstall": "unzip ios/libs/card.io-iOS-SDK/CardIO/libCardIO.a.zip -d ios/libs/card.io-iOS-SDK/CardIO/"
+  },
   "keywords": [
     "react-component",
     "react-native",
